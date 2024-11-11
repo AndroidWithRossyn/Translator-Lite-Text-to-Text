@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/background_btn">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center">
+
+                    <ImageView
+                        android:id="@+id/btnMenu"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/menu" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lora"
+                    android:text="@string/call_the_translator"
+                    android:textColor="@color/whiteText"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:id="@+id/btnFav"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/star2"
+                        android:contentDescription="TODO" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/lora"
+            android:text="@string/welcome"
+            android:textColor="@color/blackText"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtWhatYouDo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:fontFamily="@font/josefin_sans_thin"
+            android:text="@string/what_do_you_want_to_translate_today"
+            android:textColor="@color/blackText"
+            android:textFontWeight="900"
+            android:textSize="17sp" />
+
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputTranslation"
+            style="@style/Widget.Design.TextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:hint="Put To Translate"
+            android:textColorHint="@color/colorPrimary"
+            android:theme="@style/EditTextThemeOverlay"
+            android:visibility="visible"
+            app:counterTextColor="@color/colorPrimary"
+            app:hintTextColor="@color/colorPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtTranslation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_texts"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/josefin_sans_thin"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:lines="50"
+                android:overScrollMode="always"
+                android:padding="5dp"
+                android:textColor="@color/blackText"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="false"
+                android:textAppearance="?android:attr/textAppearanceMediumInverse"
+                android:textFontWeight="900" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:id="@+id/contentTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginVertical="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dLang1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_btn"
+                    android:fontFamily="@font/lora"
+                    android:text="lang1"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteText"
+                    android:textFontWeight="900"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/josefin_sans_thin"
+                    android:text="@string/to"
+                    android:textAlignment="center"
+                    android:textColor="@color/blackText"
+                    android:textFontWeight="900"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dLang2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_btn"
+                    android:fontFamily="@font/lora"
+                    android:text="lang2"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteText"
+                    android:textFontWeight="900"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/displayTranslate"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="20sp"
+                android:layout_weight="1"
+                android:background="@drawable/background_texts"
+                android:fontFamily="@font/josefin_sans_thin"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/blackText"
+                android:textFontWeight="900"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                android:theme="@style/EditTextThemeOverlay"
+                tools:ignore="NestedWeights" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginVertical="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btnCopy"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/copyicon" />
+
+                <ImageView
+                    android:id="@+id/btnSaveFav"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/staricon" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/background_texts"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/btnTranslate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_btn"
+                android:fontFamily="@font/josefin_sans_thin"
+                android:padding="10dp"
+                android:text="@string/translate"
+                android:textAlignment="center"
+                android:textColor="@color/whiteText"
+                android:textFontWeight="900"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp">
+
+                <TextView
+                    android:id="@+id/btnLangOne"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_btn"
+                    android:fontFamily="@font/josefin_sans_thin"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp"
+                    android:text="Lang 1"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteText"
+                    android:textFontWeight="900"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/btnReplace"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/sort" />
+
+                <TextView
+                    android:id="@+id/btnLangTwo"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_btn"
+                    android:fontFamily="@font/josefin_sans_thin"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp"
+                    android:text="Lang 2"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteText"
+                    android:textFontWeight="900"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spinKit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

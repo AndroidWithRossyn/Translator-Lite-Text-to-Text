@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/background_btn">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center">
+
+                    <ImageView
+                        android:id="@+id/btnMenu"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/back" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lora"
+                    android:text="@string/call_the_translator"
+                    android:textColor="@color/whiteText"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:id="@+id/btnFav"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/star2"
+                        android:contentDescription="TODO" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/lg"
+            android:contentDescription="@string/app_name" />
+
+
+        <TextView
+            android:id="@+id/play"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="@string/my_favorite"
+            android:textColor="@color/whiteText"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/btnRate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="5dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="@string/rate_the_app"
+            android:textColor="@color/whiteText"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/btnShare"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="5dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="@string/share_the_app"
+            android:textColor="@color/whiteText"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/btnPrivacy"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/whiteText"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        android:layout_marginBottom="20dp"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+</RelativeLayout>

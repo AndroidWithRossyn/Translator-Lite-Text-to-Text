@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/lg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/josefin_sans_thin"
+        android:gravity="center"
+        android:text="@string/call_the_translator"
+        android:textColor="@color/blackText"
+        android:textFontWeight="900"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="50sp"
+        android:fontFamily="@font/josefin_sans_thin"
+        android:gravity="center"
+        android:text="checking connection"
+        android:textColor="@color/colorPrimary"
+        android:textFontWeight="900"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:visibility="gone"
+        android:layout_marginTop="50dp"
+        android:id="@+id/spinKit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:fontFamily="@font/josefin_sans_thin"
+        android:textFontWeight="900"
+        android:id="@+id/btnStart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:textSize="25sp"
+        android:layout_margin="25dp"
+        android:paddingHorizontal="20sp"
+        android:paddingVertical="5dp"
+        android:background="@drawable/background_btn"
+        android:textColor="@color/whiteText"/>
+
+
+
+</RelativeLayout>

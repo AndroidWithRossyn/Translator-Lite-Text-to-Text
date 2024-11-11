@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/background_texts"
+    android:padding="5dp"
+    android:layout_marginBottom="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/lang1Icon"
+            android:src="@drawable/star2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/titleLang1"
+            android:layout_marginStart="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="lang1"
+            android:textSize="23sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/josefin_sans_thin"
+            android:textFontWeight="900"
+            />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtLang1"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_btn"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:textColor="@color/whiteText"
+        android:fontFamily="@font/lora"
+        android:textSize="20sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="20sp"
+        android:background="@color/black"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:fontFamily="@font/lora"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="20sp"
+        android:background="@color/black"
+        />
+
+    <LinearLayout
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/lang2Icon"
+            android:src="@drawable/star2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/titleLang2"
+            android:layout_marginStart="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="lang2"
+            android:textSize="23sp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/josefin_sans_thin"
+            android:textFontWeight="900"
+            />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtLang2"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_btn"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:textColor="@color/whiteText"
+        android:fontFamily="@font/lora"
+        android:textSize="20sp"/>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/btnRemove"
+        android:layout_gravity="center"
+        android:src="@drawable/remove"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+
+
+</LinearLayout>

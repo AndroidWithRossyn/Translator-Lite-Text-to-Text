@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">TRANSLATE</string>
+    <string name="translation_label">Translation:</string>
+    <string name="translate">Translate</string>
+    <string name="input_hint">enter text</string>
+    <string name="target_language">Target Language</string>
+    <string name="spanish">Spanish</string>
+    <string name="french">French</string>
+    <string name="italian">Italian</string>
+    <string name="microphone">Microphone</string>
+    <string name="play">Play</string>
+    <string name="speak">speak</string>
+    <string name="my_favorite">MY FAVORITE</string>
+    <string name="rate_the_app">RATE THE APP</string>
+    <string name="share_the_app">SHARE THE APP</string>
+    <string name="privacy_policy">PRIVACY POLICY</string>
+    <string name="what_do_you_want_to_translate_today">What do you want to translate today?</string>
+    <string name="call_the_translator">Call The Translator</string>
+    <string name="welcome">Welcome</string>
+    <string name="to">To</string>
+    <string name="back">back</string>
+
+
+
+    // change admob IDs here
+    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>
+
+
+
+    // change privacy policy here
+    <string name="privacy">https://sites.google.com/view/call-the-translator</string>
+
+
+</resources>
